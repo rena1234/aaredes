@@ -8,4 +8,4 @@ while(True):
     escolha = input("pedra, papel ou tesoura :")
     fd.sendto(bytearray(escolha, "utf-8"), (udp_ip, udp_port))
     reply = fd.recvfrom(1000)
-    print("Server:%s"%(reply[0]))
+    print((reply[0]))
